@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title></title>
+    </head>
+    <body>
+        <main>
+            <section id="content">
+                <p>Mobile Museum App</p>
+                <h1>Notary, Basquiat, 1983</h1>
+                <img class="artObject" alt="Notary" src="https://www.americansuburbx.com/wp-content/uploads/2014/12/notary-Custom-720x380.jpg">
+            </section>
+            <section id="comments">
+                <h2>Comments</h2>
+                <section class="comment">
+                    <h3>Olga said:</h3>
+                    <p>"The best painting!!"</p>
+                </section>
+            </section> 
+            <form onsubmit="submitComment(); return false">
+                <div class="formSection">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="formSection">
+                    <label for="msg">Message:</label>
+                    <textarea id="msg"></textarea>
+                </div>
+                <div class="button">
+                    <button type="default">Post your comment</button>
+                </div>
+            </form>   
+        </main>   
+        <footer>Done by Carlos Escat</footer>
+    </body>
+</html>
