@@ -6,11 +6,13 @@ function submitComment(){
     const comment = document.createElement('section')
     const h3 = document.createElement('h3')
     const p = document.createElement('p')
+    const commentSection = document.getElementById('comments')
     h3.innerHTML = `${name} said:`
     p.innerHTML = msg
     comment.classList.add('comment')
     comment.appendChild(h3)
     comment.appendChild(p)
+    commentSection.appendChild(comment)
 
-    console.log(comment)
+    console.log(commentSection)
 }
